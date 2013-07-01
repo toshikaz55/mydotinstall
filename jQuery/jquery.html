@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+	<meta charset="UTF-8" />
+	<title>jQueryの練習</title>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+  <body>
+	<h1>jQueryの練習</h1>
+	<div id="main">
+	  <p>これは練習です。こちらは<a href="http://www.google.com/">リンク</a>です。</p>
+	  <ul id="menu">
+		<li>0番</li>
+		<li class="listitem">1番</li>
+		<li class="listitem">2番</li>
+		<li><a href="http://www.yahoo.co.jp/">3番</a></li>
+	  </ul>
+	</div>
+	<script>
+	  $(document).ready( function() {
+	  // jQuery Code
+	  // セレクタ.メソッド
+	  // タグ
+	  $('ul').css( 'color', 'red' );
+	  // id
+	  $('#main').css( 'color', '#f33' );
+	  // class
+	  $('.listitem').css( 'color', 'blue' );
+	  // group
+	  $('.listitem, h1').css( 'color', 'red' );
+	  $('ul>li').css( 'color', 'red' );
+	  $('#main a').css( 'color', 'green' );
+	  });
+	</script>
+  </body>
+</html>

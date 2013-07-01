@@ -1,0 +1,79 @@
+/* セレクタ、プロパティ */
+h1 {
+	color: black;
+}
+.change {
+	cursor: move;
+}
+
+ul {
+	list-style-type: circle;
+}
+ol {
+	list-style-position: outside;
+	list-style-type: hiragana;
+}
+
+body {
+	background-color: #7755cc;
+	background-image: url("bg.jpg");
+	background-repeat: repeat-x;
+	background-position: 10px 10px;
+	background-attachment: fixed;
+}
+
+#header {
+	background-color: red;
+}
+
+#main {
+	background-color: blue;
+	float: left;
+	width: 300px;
+}
+
+#sidebar {
+	background-color: yellow;
+	float: right;
+	width: 150px;
+}
+
+#footer {
+	background-color: green;
+	clear: right;
+}
+
+#box1 {
+	background-color: red;
+	border-color: green;
+	border-width: 5px;
+	border: green 5px inset;
+	padding: 20px 10px;
+	margin: 20px;
+}
+
+p {
+	color: #aa9922;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+
+	line-height: 120%;
+	text-decoration: line-through underline;
+	font-style: italic;
+}
+
+
+/* id : # */
+#main {
+	font-size:36px;
+}
+
+/* class : . */
+.text {
+	font-size: 36px;
+}
+
+#main, .text {
+	border: 1px solid #ccc;
+}

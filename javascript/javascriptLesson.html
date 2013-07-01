@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Javascript Lesson</title>
+	</head>
+	<body>
+		<h1>Javascript Lesson</h1>
+
+		interval : <input type="text" id="interval" />
+		<script>
+			// JavaScript Object
+			// setTimeout
+			setTimeout( function(){console.log( "2sec" ) }, 2000 );
+
+			//setInterval
+			var i = 0;
+			var e = document.getElementById( 'interval' );
+			setInterval( function() { e.value=i; i++; }, 1000 );
+
+		</script>
+	</body>
+</html>
